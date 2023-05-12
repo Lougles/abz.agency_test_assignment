@@ -9,7 +9,6 @@ const Header = () => {
       <div className={styles.logoWrapper}>
         <img className={styles.logo} src={logo} alt={'logo'}/>
         <img className={styles.text} src={text} alt={'text'}/>
-        {/*<p>TESTTASK</p>*/}
       </div>
       <div className={styles.btnWrapper}>
         <Button text={'Users'} className={'primary'} />

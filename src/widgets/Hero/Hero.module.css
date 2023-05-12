@@ -1,0 +1,62 @@
+.HeroWrapper {
+    width: 328px;
+    margin: 0 auto;
+}
+.hero {
+    background-image: url('/src/shared/pictures/hero_mobile.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    height: 500px;
+    padding: 40px 16px;
+}
+.header{
+    width: 328px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    /* or 100% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.description {
+    margin-top: 21px;
+    width: 328px;
+    height: 182px;
+
+    /* Body 16 */
+
+    font-family: 'Nunito' ,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.btn {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}

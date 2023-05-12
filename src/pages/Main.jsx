@@ -1,10 +1,14 @@
 import React from 'react';
 import Header from "../widgets/Header/Header";
+import Hero from "../widgets/Hero/Hero";
 import styles from './Main.module.css';
+import Users from "../widgets/Users/Users";
 const Main = () => {
   return (
-    <div className={styles.PageWrapper}>
+    <div>
       <Header />
+      <Hero />
+      <Users />
     </div>
   );
 };
