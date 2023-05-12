@@ -1,0 +1,29 @@
+.radioBtnLabel {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+
+    /* Black 87 */
+
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.radioInput {
+    margin-right: 12px;
+    border: 1px solid #00BDD3;
+    width: 20px;
+    height: 20px;
+}
+
+.radioBtnWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11px;
+}

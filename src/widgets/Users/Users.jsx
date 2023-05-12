@@ -3,6 +3,7 @@ import styles from './Users.module.css'
 import UsersList from "../../shared/UsersList/UsersList";
 import axios from "axios";
 import Button from "../../shared/Button/Button";
+import HeadLine from "../../shared/HeadLine/HeadLine";
 const Users = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -14,15 +15,17 @@ const Users = () => {
       console.error(err);
     })
   }, []);
-  console.log(data);
   return (
     <div className={`${styles.UsersWrapper}`}>
-      <h1 className={styles.header}>Working with GET request</h1>
+      <HeadLine text={'Working with GET request'} className={'primary'}/>
+      {/*<h1 className={styles.header}>Working with GET request</h1>*/}
+      <ul className={styles.listWrapper}>
       {data &&
-      data.map((item) => (
-        <UsersList key={item.id} item={item}/>
-      ))
+          data.map((item) =>
+            <UsersList key={item.id} item={item}/>
+          )
       }
+      </ul>
       <div className={styles.btnWrapper}>
         <Button text={'Show more'} className={'secondary'}/>
       </div>

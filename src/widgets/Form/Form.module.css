@@ -1,0 +1,34 @@
+.formWrapper {
+    padding: 140px 16px 140px;
+    background-color: #F8F8F8;
+}
+.phoneLabel {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+    color: #7E7E7E;
+    margin: 0 0 25px 16px;
+}
+.radioBtnLabel {
+    margin-top: 25px;
+    /* Body 16 */
+
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+
+    /* Black 87 */
+
+    color: rgba(0, 0, 0, 0.87);
+}
+.btnWrapper {
+    display: flex;
+    justify-content: center;
+}
