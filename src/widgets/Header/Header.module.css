@@ -1,0 +1,24 @@
+.HeaderWrapper {
+    width: 360px;
+    display: flex;
+    margin: 0 auto;
+}
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    padding: 17px 0 17px 16px;
+    width: 104px;
+}
+.btnWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 16px 13px 0;
+    width: 210px;
+}
+.logo {
+    width: 38px;
+}
+.text {
+    width: 63px;
+}
