@@ -1,10 +1,9 @@
 .UsersWrapper {
-    width: 360px;
-    padding: 0 16px;
-    display: flex;
-    margin: 140px auto 0;
+    padding: 140px 16px 140px;
+    background-color: #F8F8F8;
 }
 .header {
+    margin-bottom: 50px;
     width: 328px;
     height: 80px;
     font-family: 'Nunito', sans-serif;
@@ -28,4 +27,10 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+.btnWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }

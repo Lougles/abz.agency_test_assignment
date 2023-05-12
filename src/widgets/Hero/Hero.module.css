@@ -1,7 +1,7 @@
-.HeroWrapper {
-    width: 328px;
-    margin: 0 auto;
-}
+/*.HeroWrapper {*/
+/*    width: 328px;*/
+/*    margin: 0 auto;*/
+/*}*/
 .hero {
     background-image: url('/src/shared/pictures/hero_mobile.png');
     background-size: cover;

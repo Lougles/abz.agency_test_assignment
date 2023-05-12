@@ -1,3 +1,5 @@
-/*.PageWrapper{*/
-/*    display: flex;*/
-/*}*/
+.MainWrapper {
+    overflow-x: hidden;
+    width: 360px;
+    margin: 0 auto;
+}

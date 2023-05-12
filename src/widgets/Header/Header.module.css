@@ -1,12 +1,15 @@
 .HeaderWrapper {
-    width: 360px;
+    /*width: 360px;*/
     display: flex;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    justify-content: center;
+    /*padding: 13px 0;*/
+    background-color: #F8F8F8;
 }
 .logoWrapper {
     display: flex;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 14px;
     padding: 17px 0 17px 16px;
     width: 104px;
 }
@@ -18,6 +21,7 @@
 }
 .logo {
     width: 38px;
+    margin-right: 2px;
 }
 .text {
     width: 63px;

@@ -5,7 +5,7 @@ import styles from './Main.module.css';
 import Users from "../widgets/Users/Users";
 const Main = () => {
   return (
-    <div>
+    <div className={styles.MainWrapper}>
       <Header />
       <Hero />
       <Users />
