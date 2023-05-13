@@ -11,7 +11,7 @@ const RadioButton = ({ options, selectedOption, onOptionSelect }) => {
               className={styles.radioInput}
               value={option}
               checked={selectedOption === option}
-              onChange={() => onOptionSelect(option)}
+              onChange={() => onOptionSelect(option, index)}
             />
             {option}
           </label>
