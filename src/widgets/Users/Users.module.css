@@ -10,3 +10,26 @@
 .listWrapper {
     margin-top: 50px;
 }
+
+/* FOR TABLET */
+@media screen and (min-width: 768px) {
+    .UsersWrapper {
+        padding: 140px 32px 140px;
+    }
+    .listWrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* FOR LAPTOP */
+@media screen and (min-width: 1024px) {
+    .UsersWrapper {
+        padding: 140px 60px 140px;
+    }
+}
+
+/* FOR DESKTOP */
+@media screen and (min-width: 2560px) {
+
+}

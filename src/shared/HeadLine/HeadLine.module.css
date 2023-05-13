@@ -53,11 +53,19 @@
         height: 80px;
         margin: 0 auto;
     }
+    .primary {
+        width: 704px;
+        height: 40px;
+        justify-content: center;
+    }
 }
 
 /* FOR LAPTOP */
 @media screen and (min-width: 1024px) {
-
+    .primary {
+        width: 904px;
+        margin: 0 auto;
+    }
 }
 
 /* FOR DESKTOP */

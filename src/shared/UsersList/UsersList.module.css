@@ -64,3 +64,43 @@
     order: 2;
     flex-grow: 0;
 }
+
+/* FOR TABLET */
+@media screen and (min-width: 768px) {
+    .item {
+        width: 304px;
+    }
+    .tabletMargin {
+        margin-right: 16px;
+    }
+    .header {
+        width: 304px;
+    }
+    .description {
+        width: 304px;
+    }
+}
+
+/* FOR LAPTOP */
+@media screen and (min-width: 1024px) {
+    .item {
+        width: 242px;
+    }
+    .tabletMargin {
+        margin-right: 0;
+    }
+    .laptopMargin {
+        margin-right: 29px;
+    }
+    .header {
+        width: 242px;
+    }
+    .description {
+        width: 242px;
+    }
+}
+
+/* FOR DESKTOP */
+@media screen and (min-width: 2560px) {
+
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './UsersList.module.css';
-const UsersList = ({item}) => {
+const UsersList = ({item, tablet, laptop}) => {
   return (
-    <li className={styles.item}>
+    <li className={`${styles.item} ${styles[tablet]} ${styles[laptop]}`}>
       <div className={styles.imgWrapper}>
         <img src={item.photo} alt={'pic'} />
       </div>

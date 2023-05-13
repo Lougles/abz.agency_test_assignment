@@ -7,7 +7,7 @@ import HeadLine from "../../shared/HeadLine/HeadLine";
 const Users = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-  axios.get('https://frontend-test-assignment-api.abz.agency/api/v1/users')
+  axios.get('https://frontend-test-assignment-api.abz.agency/api/v1/users?count=6')
     .then(({data}) => {
       setData(data.users);
     })
@@ -21,8 +21,8 @@ const Users = () => {
       {/*<h1 className={styles.header}>Working with GET request</h1>*/}
       <ul className={styles.listWrapper}>
       {data &&
-          data.map((item) =>
-            <UsersList key={item.id} item={item}/>
+          data.map((item, index) =>
+            <UsersList key={item.id} item={item} tablet={(index + 1) % 2 === 0 ? '' : 'tabletMargin'} laptop={(index + 1) % 3 === 0 ? '' : 'laptopMargin'}/>
           )
       }
       </ul>
