@@ -1,5 +1,27 @@
+/* FOR MOBILE */
+
 .MainWrapper {
     overflow-x: hidden;
     width: 360px;
     margin: 0 auto;
+}
+/* FOR TABLET */
+@media screen and (min-width: 768px) {
+    .MainWrapper {
+        width: 768px;
+    }
+}
+
+/* FOR LAPTOP */
+@media screen and (min-width: 1024px) {
+    .MainWrapper {
+        width: 1024px;
+    }
+}
+
+/* FOR DESKTOP */
+@media screen and (min-width: 2560px) {
+    .MainWrapper {
+        width: 2560px;
+    }
 }

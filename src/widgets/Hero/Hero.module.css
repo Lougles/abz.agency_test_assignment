@@ -36,3 +36,25 @@
     display: flex;
     justify-content: center;
 }
+
+/* FOR TABLET */
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: url('/src/shared/pictures/hero_tablet.png');
+        padding: 89px 194px 0 194px;
+    }
+}
+
+/* FOR LAPTOP */
+@media screen and (min-width: 1024px) {
+    .hero {
+        background-image: url('/src/shared/pictures/hero_laptop.png');
+        padding: 164px 322px 0 322px;
+        height: 650px;
+    }
+}
+
+/* FOR DESKTOP */
+@media screen and (min-width: 2560px) {
+
+}

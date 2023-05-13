@@ -1,9 +1,6 @@
 .HeaderWrapper {
-    /*width: 360px;*/
     display: flex;
-    /*margin: 0 auto;*/
     justify-content: center;
-    /*padding: 13px 0;*/
     background-color: #F8F8F8;
 }
 .logoWrapper {
@@ -25,4 +22,40 @@
 }
 .text {
     width: 63px;
+}
+
+/* FOR TABLET */
+@media screen and (min-width: 768px) {
+    .HeaderWrapper {
+        justify-content: space-between;
+    }
+    .logoWrapper {
+        padding: 17px 0 17px 32px;
+        margin: 0;
+    }
+    .btnWrapper {
+        padding: 13px 32px 13px 0;
+    }
+}
+
+/* FOR LAPTOP */
+@media screen and (min-width: 1024px) {
+    .logoWrapper {
+        padding: 17px 0 17px 60px;
+        margin: 0;
+    }
+    .btnWrapper {
+        padding: 13px 60px 13px 0;
+    }
+}
+
+/* FOR DESKTOP */
+@media screen and (min-width: 2560px) {
+    .logoWrapper {
+        padding: 17px 0 17px 695px;
+        margin: 0;
+    }
+    .btnWrapper {
+        padding: 13px 695px 13px 0;
+    }
 }
