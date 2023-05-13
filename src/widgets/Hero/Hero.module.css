@@ -3,8 +3,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: repeat-x;
-    height: 500px;
-    padding: 40px 16px;
+    height: 460px;
+    width: 360px;
+    padding: 40px 16px 0 16px;
 }
 .description {
     margin-top: 21px;
@@ -42,6 +43,12 @@
     .hero {
         background-image: url('/src/shared/pictures/hero_tablet.png');
         padding: 89px 194px 0 194px;
+        height: 401px;
+    }
+    .description {
+        width: 380px;
+        height: 156px;
+        margin: 21px auto;
     }
 }
 
@@ -50,11 +57,16 @@
     .hero {
         background-image: url('/src/shared/pictures/hero_laptop.png');
         padding: 164px 322px 0 322px;
-        height: 650px;
+        height: 486px;
     }
 }
 
 /* FOR DESKTOP */
 @media screen and (min-width: 2560px) {
-
+    .hero {
+        background-image: url('/src/shared/pictures/hero_desktop.png');
+        width: 1170px;
+        margin: 0 auto;
+        padding: 164px 0 0 0;
+    }
 }
