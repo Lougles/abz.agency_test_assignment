@@ -22,7 +22,12 @@ const Users = () => {
       <ul className={styles.listWrapper}>
       {data &&
           data.map((item, index) =>
-            <UsersList key={item.id} item={item} tablet={(index + 1) % 2 === 0 ? '' : 'tabletMargin'} laptop={(index + 1) % 3 === 0 ? '' : 'laptopMargin'}/>
+            <UsersList
+              key={item.id}
+              item={item}
+              index={index}
+              data ={data}
+            />
           )
       }
       </ul>

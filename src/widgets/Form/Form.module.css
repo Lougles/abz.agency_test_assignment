@@ -2,6 +2,7 @@
     padding: 0 16px 100px;
     background-color: #F8F8F8;
 }
+
 .phoneLabel {
     font-family: 'Nunito', sans-serif;
     font-style: normal;
@@ -12,6 +13,7 @@
     color: #7E7E7E;
     margin: 0 0 25px 16px;
 }
+
 .radioBtnLabel {
     margin-top: 25px;
     /* Body 16 */
@@ -28,7 +30,41 @@
 
     color: rgba(0, 0, 0, 0.87);
 }
+
 .btnWrapper {
     display: flex;
     justify-content: center;
+}
+
+/* FOR TABLET */
+@media screen and (min-width: 768px) {
+    .formWrapper {
+        padding: 0 29px 100px;
+    }
+    .phoneLabel {
+        margin-left: 170px;
+    }
+    .radioBtnLabel {
+        margin: 29px 0 0 160px;
+    }
+}
+
+/* FOR LAPTOP */
+@media screen and (min-width: 1024px) {
+    .phoneLabel {
+        margin-left: 307px;
+    }
+    .radioBtnLabel {
+        margin: 29px 0 0 280px;
+    }
+}
+
+/* FOR DESKTOP */
+@media screen and (min-width: 2560px) {
+    .phoneLabel {
+        margin-left: 1106px;
+    }
+    .radioBtnLabel {
+        margin: 29px 0 0 1050px;
+    }
 }

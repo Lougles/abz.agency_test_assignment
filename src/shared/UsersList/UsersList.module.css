@@ -6,6 +6,9 @@
     border-radius: 10px;
     margin-bottom: 20px;
 }
+.lastMobileItem {
+    margin-bottom: 0;
+}
 .imgWrapper {
     display: flex;
     justify-content: center;
@@ -69,6 +72,10 @@
 @media screen and (min-width: 768px) {
     .item {
         width: 304px;
+        margin-bottom: 16px;
+    }
+    .lastTabletItem {
+        margin-bottom: 0;
     }
     .tabletMargin {
         margin-right: 16px;
@@ -85,6 +92,10 @@
 @media screen and (min-width: 1024px) {
     .item {
         width: 242px;
+        margin-bottom: 29px;
+    }
+    .lastLaptopItem {
+        margin: 0;
     }
     .tabletMargin {
         margin-right: 0;
@@ -102,5 +113,13 @@
 
 /* FOR DESKTOP */
 @media screen and (min-width: 2560px) {
-
+    .item {
+        width: 330px;
+    }
+    .header {
+        width: 330px;
+    }
+    .description {
+        width: 330px;
+    }
 }

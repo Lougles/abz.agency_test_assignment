@@ -5,7 +5,7 @@
 .btnWrapper {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .listWrapper {
     margin-top: 50px;
@@ -31,5 +31,8 @@
 
 /* FOR DESKTOP */
 @media screen and (min-width: 2560px) {
-
+    .listWrapper {
+        width: 1168px;
+        margin: 50px auto 0;
+    }
 }

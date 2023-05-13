@@ -5,25 +5,40 @@
     font-size: 16px;
     line-height: 26px;
     /* identical to box height, or 162% */
-
-
     /* Black 87 */
-
     color: rgba(0, 0, 0, 0.87);
     display: flex;
     align-items: center;
     margin-bottom: 7px;
 }
-
 .radioInput {
     margin-right: 12px;
     border: 1px solid #00BDD3;
     width: 20px;
     height: 20px;
 }
-
 .radioBtnWrapper {
     display: flex;
     flex-direction: column;
     margin-top: 11px;
+}
+/* FOR TABLET */
+@media screen and (min-width: 768px) {
+    .radioBtnWrapper {
+        margin-left: 155px;
+    }
+}
+
+/* FOR LAPTOP */
+@media screen and (min-width: 1024px) {
+    .radioBtnWrapper {
+        margin-left: 280px;
+    }
+}
+
+/* FOR DESKTOP */
+@media screen and (min-width: 2560px) {
+    .radioBtnWrapper {
+        margin-left: 1050px;
+    }
 }
