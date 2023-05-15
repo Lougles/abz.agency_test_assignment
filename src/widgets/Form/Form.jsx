@@ -15,9 +15,7 @@ const Form = () => {
   const [selectedOption, setSelectedOption] = useState(options[0]);
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(1);
   const [photo, setSelectedFile] = useState(null);
-  const [newUser, setNewUser] = useState(null);
   const [token, setToken] = useState('');
-  const [positions, setPositions] = useState(null);
   
   const isNameValid = /^.{2,60}$/.test(name);
   const isEmailValid = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
@@ -28,7 +26,6 @@ const Form = () => {
     axios.get('https://frontend-test-assignment-api.abz.agency/api/v1/positions')
     .then(res => {
       const positionsNames = res.data.positions.map(position => position.name);
-      setPositions(res.data.positions);
       setOptions(positionsNames);
     })
     .catch(e => {

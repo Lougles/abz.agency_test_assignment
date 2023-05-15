@@ -14,6 +14,7 @@ const Users = () => {
       if (data.page === data.total_pages) {
           setIsButtonDisabled(true);
       }
+      console.log(data);
       setData(data.users);
     })
     .catch(err => {
