@@ -7,6 +7,9 @@ button {
     text-align: center;
     justify-content: center;
 }
+button[disabled] {
+    background-color: #7E7E7E;
+}
 .primary {
     background: #F4E041;
     width: 100px;

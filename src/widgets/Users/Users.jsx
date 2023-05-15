@@ -6,19 +6,27 @@ import Button from "../../shared/Button/Button";
 import HeadLine from "../../shared/HeadLine/HeadLine";
 const Users = () => {
   const [data, setData] = useState([]);
+  const [page, setPage] = useState(1);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+  
   useEffect(() => {
-  axios.get('https://frontend-test-assignment-api.abz.agency/api/v1/users?count=6')
+  axios.get(`https://frontend-test-assignment-api.abz.agency/api/v1/users?page=${page}&count=6`)
     .then(({data}) => {
+      if (data.page === data.total_pages) {
+          setIsButtonDisabled(true);
+      }
       setData(data.users);
     })
     .catch(err => {
       console.error(err);
     })
-  }, []);
+  }, [page, data]);
+  const handleShowMore = () => {
+    setPage(page + 1)
+  }
   return (
     <div className={`${styles.UsersWrapper}`}>
       <HeadLine text={'Working with GET request'} className={'primary'}/>
-      {/*<h1 className={styles.header}>Working with GET request</h1>*/}
       <ul className={styles.listWrapper}>
       {data &&
           data.map((item, index) =>
@@ -32,7 +40,7 @@ const Users = () => {
       }
       </ul>
       <div className={styles.btnWrapper}>
-        <Button text={'Show more'} className={'secondary'}/>
+        {!isButtonDisabled && <Button text={'Show more'} className={'secondary'} onClick={handleShowMore}/>}
       </div>
     </div>
   );

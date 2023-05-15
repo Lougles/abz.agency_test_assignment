@@ -10,6 +10,7 @@
     padding: 14px 0 14px 16px;
 }
 
+
 .file {
     background: #F8F8F8;
     /* Light_gray */
@@ -53,7 +54,16 @@
 .fileInput::-webkit-file-upload-button:hover {
     background-color: #005ce6;
 }
-
+.good:focus {
+    outline: none;
+    border-color: green;
+    box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.1);
+}
+.bad:focus {
+    outline: none;
+    border-color: red;
+    box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.1);
+}
 /* FOR TABLET */
 @media screen and (min-width: 768px) {
     .primary {
