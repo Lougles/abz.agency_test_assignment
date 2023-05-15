@@ -6,6 +6,7 @@ const UsersList = ({item, index, data}) => {
   const [lastMobileItem, setLastMobileItem] = useState('');
   const [lastTabletItems, setLastTabletItem] = useState('');
   const [lastLaptopItems, setLastLaptopItems] = useState('');
+  
   useEffect(() => {
     if ((index + 1) % 2 !== 0) {
       setTablet('tabletMargin');

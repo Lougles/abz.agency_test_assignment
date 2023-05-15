@@ -80,6 +80,12 @@ const Form = () => {
     setPhoneNumber(formattedPhoneNumber);
   }
   
+  const handleReset = () => {
+    setName('');
+    setPhoneNumber('');
+    setEmail('');
+  }
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     if(!isNameValid || !isEmailValid || !isPhoneValid || !isPhotoValid) {
@@ -96,6 +102,7 @@ const Form = () => {
     };
     axios.post('https://frontend-test-assignment-api.abz.agency/api/v1/users', formData, {headers})
     .then((response) => {
+      handleReset();
       alert(response.data.message);
     })
     .catch((error) => {
@@ -112,7 +119,7 @@ const Form = () => {
       <label className={styles.phoneLabel} htmlFor="phone">+38 (XXX) XXX - XX - XX</label>
       <p className={styles.radioBtnLabel}>Select your position</p>
       <RadioButton options={options} selectedOption={selectedOption} onOptionSelect={handleOptionSelect}/>
-        <Input className={'fileInput'} type={'file'} accept=".jpg,.jpeg" onChange={handleFileChange} placeholder={'qwe'}/>
+        <Input className={'fileInput'} type={'file'} accept=".jpg,.jpeg" onChange={handleFileChange}/>
       <div className={styles.btnWrapper}>
         <Button text={'Sign up'} className={'third'} type={'submit'} />
       </div>

@@ -8,7 +8,6 @@ const Users = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
-  
   useEffect(() => {
   axios.get(`https://frontend-test-assignment-api.abz.agency/api/v1/users?page=${page}&count=6`)
     .then(({data}) => {
@@ -20,7 +19,7 @@ const Users = () => {
     .catch(err => {
       console.error(err);
     })
-  }, [page, data]);
+  }, [page]);
   const handleShowMore = () => {
     setPage(page + 1)
   }
